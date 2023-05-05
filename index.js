@@ -184,7 +184,7 @@ let z = Math.floor(Math.random() * 6) + 1;
 console.log(x);
 console.log(y);
 console.log(z); */
-let x;
+/* let x;
 let y;
 let z;
 
@@ -197,4 +197,7 @@ document.getElementById("rolldice").onclick = function () {
 
   z = Math.floor(Math.random() * 6) + 1;
   document.getElementById("dice3").innerHTML = z;
-};
+}; */
+
+// (00:50:53) useful string property and methods 🧵
+
