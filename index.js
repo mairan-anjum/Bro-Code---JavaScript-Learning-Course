@@ -200,4 +200,257 @@ document.getElementById("rolldice").onclick = function () {
 }; */
 
 // (00:50:53) useful string property and methods 🧵
+/*
+let username = "  Bro Code  ";
+let phonenumber = "123-445-2245";
 
+// console.log(username.length);
+// console.log(username.charAt(0));
+// console.log(username.indexOf("o"));
+// console.log(username.lastIndexOf("o"));
+// console.log(username.trim());
+// console.log(username.toUpperCase());
+console.log(username.toLowerCase());
+
+console.log(phonenumber.replaceAll("-", "+")); */
+
+// (00:55:13) string slicing ✂️
+// slice() extracts a section of a String
+// and returns it as a new String,
+// without modifying the original string
+/*
+let fullName = "Peter Johan";
+let firstName;
+let lastName;
+
+// console.log(fullName.slice(0, 3)); //first name
+// console.log(fullName.slice(4)); // last name
+
+firstName = fullName.slice(0, fullName.indexOf(" "));
+lastName = fullName.slice(fullName.indexOf(" ") + 1);
+
+console.log(firstName);
+console.log(lastName); */
+/*
+// (00:59:08) method chaining ⛓️
+let userName = "bro";
+let letter = userName.charAt(1).toUpperCase();
+console.log(letter); */
+
+// (01:01:03) if statements ❔
+// If statement = a basic form of decision making
+// if a condition is true, then do something
+// if not, then don't do it!
+/*
+let age = -6;
+
+if (age >= 65) {
+  console.log("You are a senior citizen");
+} else if (age < 0) {
+  console.log("You have not been born yet");
+} else if (age >= 18) {
+  console.log("You are adult!");
+} else {
+  console.log("You are child!");
+} */
+/*
+let online = false;
+
+if (online) {
+  console.log("You are online!");
+} else {
+  console.log("You are offline!");
+} */
+
+// (01:05:24) checked property ✔️
+/*
+document.getElementById("mebutton").onclick = function () {
+  const checkbox = document.getElementById("subs1");
+  const visabox = document.getElementById("visa");
+  const masterbox = document.getElementById("masters");
+  const paybox = document.getElementById("paypal");
+  if (checkbox.checked) {
+    console.log("You are Subscribed!");
+  } else {
+    console.log("You are not Subscribed!");
+  }
+
+  if (visabox.checked) {
+    console.log("You are paying with a Visa!");
+  } else if (masterbox.checked) {
+    console.log("You are paying with a MasterCard!");
+  } else if (paybox.checked) {
+    console.log("You are paying with a Paypal!");
+  } else {
+    console.log("You must select a payment type!");
+  }
+}; */
+
+// (01:12:39) switches 🔀
+// switch = statement that examines a value
+// for a match against many case clauses.
+// more efficient that many "else if" statement
+/*let grade = "F";
+if (grade == "A") {
+  console.log("You did great!");
+} else if (grade == "B") {
+  console.log("You did good!");
+} else if (grade == "C") {
+  console.log("You did okay!");
+} else if (grade == "D") {
+  console.log("You passed...barely!");
+} else if (grade == "F") {
+  console.log("You FAILED!");
+} else {
+  console.log(grade, "is not a letter grade!");
+}
+
+let grade = "F";
+
+ switch (grade) {
+  case "A":
+    console.log("You did great!");
+    break;
+  case "B":
+    console.log("You did good!");
+    break;
+  case "C":
+    console.log("You did okay!");
+    break;
+  case "D":
+    console.log("You passed...barely!");
+    break;
+  case "F":
+    console.log("YOU FAILED!");
+    break;
+  default:
+    console.log(grade, "is not a letter grade!");
+    break;
+} 
+let grade = 76;
+switch (true) {
+  case grade >= 90:
+    console.log("You did great!");
+    break;
+  case grade >= 80:
+    console.log("You did good!");
+    break;
+  case grade >= 70:
+    console.log("You did okay!");
+    break;
+  case grade >= 60:
+    console.log("You passed...barely!");
+    break;
+  case grade < 60:
+    console.log("YOU FAILED!");
+    break;
+  default:
+    console.log(grade, "is not a letter grade!");
+    break;
+} */
+
+// (01:16:26) AND OR logical operators && ||
+// Give us ability to check more than 1 condition concurrently
+// && AND (BOTH conditions must be true)
+// || OR (Either condition can be true)
+/* let temp = 1;
+let sunny = false;
+if (temp > 0 && temp <= 30 && sunny) {
+  console.log("Weather is Good!");
+} else {
+  console.log("Weather is not Good!");
+}
+
+let temp1 = 31;
+
+if (temp1 <= 0 || temp1 >= 30) {
+  console.log("Weather is not Good!");
+} else {
+  console.log("Weather is Good!");
+} */
+
+//(01:20:29) NOT logical operator ❕
+// NOT logical operator
+// typically used to reverse a condition's boolean value
+// true -> false   false -> true
+/* let temp = 2;
+let sunny = false;
+
+if (!(temp > 0)) {
+  console.log("It's cold outside!");
+} else {
+  console.log("It's warm outside!");
+}
+
+if (!sunny) {
+  console.log("It's cloudy outside!");
+} else {
+  console.log("It's sunny outside!");
+} */
+
+// (01:23:26) while loops 🔁
+// While loop = repeat some code
+// while some condition is true
+//    potentially infinite
+/*let username = "";
+while (username == "" || username == null) {
+  username = window.prompt("Enter user name!");
+}
+console.log("Hello", username); */
+
+// (01:26:14) do while loops 🔂
+// do while loop = do something,
+// then check the condition,
+// repeat if conition is true
+/*let username;
+do {
+  username = window.prompt("Enter user name!");
+} while (username == "");
+console.log("Hello", username); */
+
+// (01:28:36) for loops 🔃
+// for loop = repeat some code a
+// certain amount of times
+/*for (let i = 10; i > 0; i -= 1) {
+  console.log(i);
+}
+console.log("Hello it for testing"); */
+
+// (01:32:05) break and continue statements 💔
+/*for (j = 1; j <= 20; j += 1) {
+  if (j == 13) {
+    // continue;
+    break;
+  }
+  console.log(j);
+} */
+
+// (01:33:34) nested loops ➿
+// nested loop = a loop inside of another loop
+/*let symbol = window.prompt("Enter a sysmbol to use!");
+let row = window.prompt("Enter # of rows!");
+let column = window.prompt("Enter # of columns!");
+for (let i = 1; i <= row; i += 1) {
+  for (let j = 1; j <= column; j += 1) {
+    document.getElementById("test1").innerHTML += symbol;
+  }
+  document.getElementById("test1").innerHTML += "<br>";
+} */
+
+// (01:38:05) functions ☎️
+// function = Define code once, and use it many times
+// To perform some code, call the function name
+startprogram();
+function startprogram() {
+  let age = 12;
+  let username = "Pakora";
+  happybirthday(age, username);
+}
+
+function happybirthday(age, username) {
+  console.log("Happy Birthday to You!");
+  console.log("Happy Birthday to You!");
+  console.log("Happy Birthday dear", username);
+  console.log("Happy Birthday to You!");
+  console.log("You are", age, "years old!");
+}
