@@ -440,7 +440,7 @@ for (let i = 1; i <= row; i += 1) {
 // (01:38:05) functions ☎️
 // function = Define code once, and use it many times
 // To perform some code, call the function name
-startprogram();
+/*startprogram();
 function startprogram() {
   let age = 12;
   let username = "Pakora";
@@ -453,4 +453,50 @@ function happybirthday(age, username) {
   console.log("Happy Birthday dear", username);
   console.log("Happy Birthday to You!");
   console.log("You are", age, "years old!");
+} */
+
+// (01:42:43) return statement 🔙
+// return = returns a value back to the plane
+// where you invoked a function
+
+/*let area;
+let width;
+let height;
+
+width = window.prompt("Enter Width:");
+height = window.prompt("Enter Height:");
+
+area = getarea(width, height);
+console.log("The are is:", area);
+function getarea(width, height) {
+  return width * height;
+} */
+
+// (01:45:36) ternary operator ❔
+// ternary operator = Shortcut for an 'if/else statement'
+// takes 3 operands
+// 1. a condition with ?
+// 2. expression if true :
+// 3. expression if false
+// condition ? exprIfTrue : exprIfFalse
+/*let adult = checkage(17);
+console.log(adult);
+function checkage(age) {
+  return age >= 18 ? true : false;
 }
+
+checkwinner(false);
+function checkwinner(win) {
+  win ? console.log("You are win") : console.log("You are loss");
+} */
+
+// (01:48:58) var vs let 🥊
+// variable scope = where a variable is accessible
+// let = variable are limited to block scope {}
+// var = variable are limited to a function(){}
+
+// global variable = is declared outside any function
+// (if global, var will change browser's window properties)
+
+for (var i = 1; i <= 3; i += 1) {}
+console.log(i);
