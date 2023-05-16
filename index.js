@@ -497,6 +497,114 @@ function checkwinner(win) {
 
 // global variable = is declared outside any function
 // (if global, var will change browser's window properties)
+/*nextlevel();
+function nextlevel() {
+  for (var i = 1; i <= 3; i += 1) {}
+  console.log(i);
+} */
 
-for (var i = 1; i <= 3; i += 1) {}
-console.log(i);
+// #28 (01:53:25) template literals 💬
+// template literals = delimited with (`)
+// instead of double or single quotes
+// allow embedded variable and expression
+/*
+let username = "Bro";
+let item = 3;
+let total = 75;
+
+// console.log("Hello", username);
+// console.log("You have", item, "items in your cart");
+// console.log("Your total cost is $", total);
+
+// console.log(`Hello ${username}`);
+// console.log(`You have ${item} items in your cart`);
+// console.log(`Your total cost is $${total}`);
+
+let text = `Hello ${username}<br>
+You have ${item} items in your cart<br>
+Your total cost is $${total}`;
+
+// console.log(text);
+document.getElementById("test12").innerHTML = text;*/
+
+// #29 (01:57:47) format currency 💲
+// toLocaleString() = returns a string with a language
+// sensitive representation of this number
+
+// number.toLocaleString(locale, {options});
+
+// 'locale' =specify that language (undefined = default set in browser)
+// 'options' = object with formating options
+/*
+let mynum = 100;
+
+// mynum = mynum.toLocaleString("en-US"); //US English
+// mynum = mynum.toLocaleString("hi-IN"); //hindi
+// mynum = mynum.toLocaleString("de-DE"); //Standard German
+
+// mynum = mynum.toLocaleString("en-US", { style: "currency", currency: "USD" });
+// mynum = mynum.toLocaleString("hi-IN", { style: "currency", currency: "INR" });
+// mynum = mynum.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+
+// mynum = mynum.toLocaleString(undefined, { style: "percent" });
+
+// mynum = mynum.toLocaleString(undefined, { style: "unit", unit: "celsius" });
+// mynum = mynum.toLocaleString(undefined, { style: "unit", unit: "fahrenheit" });
+// mynum = mynum.toLocaleString(undefined, { style: "unit", unit: "gram" });
+
+console.log(mynum); */
+
+// #30 (02:02:47) number guessing game 🔢
+/*
+const answer = Math.floor(Math.random() * 10 + 1);
+let guess = 0;
+document.getElementById("guessbtn").onclick = function () {
+  let guess = document.getElementById("guessing").value;
+  if (guess == answer) {
+    alert(`${answer} is the #. IT TOOK YOU ${guess} guesses`);
+  } else if (guess < answer) {
+    alert("Too small");
+  } else {
+    alert("Too Large");
+  }
+}; */
+
+// #31 (02:06:55) temperature conversion program 🌡️
+/*
+document.getElementById("calculate").onclick = function () {
+  let temp;
+  if (document.getElementById("ctemp").checked) {
+    temp = document.getElementById("entertemp").value;
+    temp = Number(temp);
+    temp = celtemp(temp);
+    document.getElementById("results").innerHTML = temp + "°C";
+  } else if (document.getElementById("ftemp").checked) {
+    temp = document.getElementById("entertemp").value;
+    temp = Number(temp);
+    temp = fahrtemp(temp);
+    document.getElementById("results").innerHTML = temp + "°F";
+  } else {
+    document.getElementById("results").innerHTML = "Plase select any unit";
+  }
+};
+
+function celtemp(temp) {
+  return ((temp - 32) * 5) / 9;
+}
+
+function fahrtemp(temp) {
+  return (temp * 9) / 5 + 32;
+} */
+
+// #32 (02:15:49) arrays 🍎
+
+let fruits = ["apple", "orange", "banana"];
+
+fruits.push("mango"); // add an element in last
+fruits.pop(); // remove last element
+fruits.unshift("mango"); // add an element in first
+fruits.shift(); // remove first element
+
+let length = fruits.length; // lenght of element
+let index = fruits.indexOf("orange"); //
+console.log(index);
