@@ -597,7 +597,7 @@ function fahrtemp(temp) {
 } */
 
 // #32 (02:15:49) arrays 🍎
-
+/*
 let fruits = ["apple", "orange", "banana"];
 
 fruits.push("mango"); // add an element in last
@@ -607,4 +607,125 @@ fruits.shift(); // remove first element
 
 let length = fruits.length; // lenght of element
 let index = fruits.indexOf("orange"); //
-console.log(index);
+console.log(index); */
+
+// #33 (02:20:33) loop through an array ➰
+/*
+let prices = [5, 10, 15, 20, 25];
+
+// for (let i = 0; i < prices.length; ++i) {
+//   console.log(prices[i]);
+// }
+for (let i = prices.length - 1; i >= 0; --i) {
+  console.log(prices[i]);
+}
+
+for (let price of prices) {
+  console.log(price);
+} */
+
+// #34 (02:23:16) sort an array of strings 🗃️
+/* let fruits = ["orange", "apple", "banna", "mango"];
+
+fruits = fruits.sort().reverse();
+for (let fruit of fruits) {
+  console.log(fruit);
+} */
+
+// #35 (02:24:50) 2D arrays 🛒
+// 2D array = an array of arrays
+/*
+let friuts = ["orange", "apple", "mango"];
+let vegetables = ["carrots", "onions", "potstoes"];
+let meats = ["eggs", "chicken", "fish"];
+
+let groceries = [friuts, vegetables, meats];
+
+for (let grocerylist of groceries) {
+  for (let alllist of grocerylist) {
+    console.log(alllist);
+  }
+} */
+
+// #36 (02:29:14) spread operator 🖐️
+// spread operator = allows iterable such as an
+// ... array or string to be expanded
+// in places where zero or more
+// arguments are expected
+//(unpacks the elements)
+/*
+let number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let maximum = Math.max(...number);
+console.log(maximum);
+
+let word = "hello world";
+console.log(...word);
+
+let class1 = ["ali", "haider", "khan"];
+let class2 = ["mairan", "ausaf", "moin"];
+
+class1.push(...class2);
+console.log(class1); */
+
+// #37 (02:33:32) rest parameters 💤
+// rest parameters = represents an indefinite number
+// ...    of parameters
+//  (Packs arguments into an array)
+/*
+let a = 1;
+let b = 2;
+let c = 3;
+let d = 4;
+let e = 5;
+
+console.log(sum(a, b, c, d, e));
+
+function sum(...numbers) {
+  let total = 0;
+  for (let number of numbers) {
+    total += number;
+  }
+  return total;
+}*/
+
+// #38 (02:37:09) callbacks 🤙
+// callback = a function passed as an argument
+// to another function
+// Ensures that a function is not going
+// to run before a task is completed.
+// Helps us develop asynchronous code.
+// (When one functions has to wait for another function)
+// that helps us avoid errors and potential problems
+// Ex. Wait for a file to load
+
+/* let total = sum(2, 3);
+displayDOM(total);
+
+function sum(x, y) {
+  let result = x + y;
+  return result;
+}
+
+function DisplayConsoles(output) {
+  console.log(output);
+}
+
+function displayDOM(output) {
+  document.getElementById("newtext").innerHTML = output;
+} */
+
+/* sum(2, 3, displayDOM);
+
+function sum(x, y, callBack) {
+  let result = x + y;
+  callBack(result);
+}
+
+function DisplayConsoles(output) {
+  console.log(output);
+}
+
+function displayDOM(output) {
+  document.getElementById("newtext").innerHTML = output;
+} */
